@@ -9,7 +9,8 @@ const taskThreeResult = document.getElementById("taskThreeResult");
 // task one
 function getNumber(num) {
   taskOne.setAttribute("value", "defaultValue");
-  if (taskOne.value || num > 7) {
+  const nunberTest = taskOne.value || num;
+  if (nunberTest > 7) {
     console.log("Hi");
     taskOneResult.innerHTML = "Hi";
   } else {
@@ -21,7 +22,8 @@ function getNumber(num) {
 // task two
 function getName(name) {
   taskTwo.setAttribute("value", "defaultValue");
-  if (taskTwo.value || name === "Vyachaslav") {
+  const nameTest = taskTwo.value || num;
+  if (nameTest === "Vyachaslav") {
     console.log("Hi Vyachaslav");
     taskTwoResult.innerHTML = "Hi Vyachaslav";
   } else {
@@ -33,10 +35,10 @@ function getName(name) {
 // task three
 function getArray() {
   taskThree.setAttribute("value", "defaultValue");
-  let arr = [...arguments]
-  let ar = (taskThree.value).split(',') 
+  let arr = [...arguments];
+  let ar = taskThree.value.split(",");
   // let b = ar
-  let arrForResult = arr.length !== 0 ? arr : ar 
+  let arrForResult = arr.length !== 0 ? arr : ar;
 
   // let arrForResult = arr || ar
   let arrayNumb = arrForResult.filter((num) => num % 3 == 0);
