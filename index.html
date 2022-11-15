@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Test</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="taskOne">
+            <h1>Task 1</h1>
+                <input id="taskOne" placeholder="Put the number " type="number">
+                <button onclick="getNumber()">
+                    click to set
+                </button>
+                <p id="taskOneResult""></p>
+        </div>
+
+        <div class="task-one">
+            <h1>Task 2</h1>
+            <input  id="taskTwo" placeholder="Put the name " type="text">
+            <button onclick="getName()">
+                click to set
+            </button>
+            <p id="taskTwoResult""></p>
+        </div>
+
+        <div class="task-one">
+            <h1>Task 3</h1>
+            <input placeholder="Put the array " type="text" id="taskThree">
+            <button onclick="getArray()">
+                click to set
+            </button>
+            <p id="taskThreeResult""></p>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>
